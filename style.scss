@@ -1,0 +1,253 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+background-color: #f7f7f7;
+
+  }
+  .container-fluid {
+    // padding: 7% 15%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat-Bold";
+  }
+  
+  p {
+    color: gray;
+    font-family: "Montserrat-Bold";
+  }
+
+  //call action section
+  #call-action-section {
+    background-color: #1f1f1f;
+
+    & h2{
+      color: #444
+    }
+    & span{
+      font-size: 1.5rem;
+    }
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #8b0000;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  #countdown span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  #countdown span span {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+  }
+  
+  #countdown span span:first-child {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+
+
+//header section
+#header-section{
+  & a{
+    font-size: auto;
+  }
+}
+
+
+/* nav bar */
+.navbar {
+   
+  }
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+  }
+  
+  /* Download btn */
+  .download-button {
+    margin: 5% 3% 5% 5%;
+  }
+  
+
+
+//main section
+#main-section{
+  padding: 7% 15%;
+  min-height: 70vh;
+  background-image: url(images/suematsu.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  color: #fff;
+
+  & a{
+    color: #fff;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+/* Tittle section */
+  .title-image-box {
+    position: relative;
+  }
+  .title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+  }
+
+  //achievement section
+  #achievement-section {
+    padding: 3% 4%;
+    text-align: center;
+  
+    h1 {
+      font-weight: bold;
+      margin-bottom: 3%;
+    }
+  }
+  
+  .achieve-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .achieve-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+  
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.3;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .achieve-item:hover .description {
+    opacity: 1;
+  }
+  
+
+
+#achievement-section h1 {
+  font-size: 48px;
+ 
+ 
+}
+
+//profile section
+#profile{
+  padding: 7% 3%;
+  text-align: center;
+  & img{
+    width:100%;
+  }
+}
+
+.name-and-image{
+  & .profile-name{
+    padding: 3% 3%;
+  }
+}
+
+/* footer section */
+#footer {
+  text-align: center;
+  color: #fff;
+
+  & a{
+    color: #fff;
+  }
+}
+#footer i {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .description{
+    height: 70%;
+    
+  }
+  #countdown {
+    font-size: 1.5em;
+  }
+  #countdown {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+    
+    #countdown span span:first-child {
+      font-size: 0.7rem;
+    }
+}
